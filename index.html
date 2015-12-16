@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title> My Personal Website </title>
 
-    <!-- CSS -->
+    <!-- CSS and JS 
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="js/init.js"></script>
+    -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+    </script>
 </head>
 <body>
-  <nav class="white" role="navigation">
+    <nav class="blue lighten-3" role="navigation">
     <div class="nav-wrapper container">
       <a id ="logo-container" href="#" class="brand-logo">David Guan</a>
         <ul class="right hide-on-med-and-down">
@@ -21,17 +34,97 @@
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
+            <li><a href="#" id="logo-container" class="brand-logo">David Guan</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="mdi-navigation-menu"></i></a>
     </div> 
- </nav>
-    <h1>Something random here</h1>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center grey-text text-lighten-1">David Guan</h1>
+                <div class="row center">
+                    <h5 class="header col s12 grey-text text-lighten-3">Student at University of Illinois at Urbana-Champaign</h5>
+                </div>
+                <div class="row center">
+                    <a href="#projects" class="waves-effect waves-light blue lighten-3 btn-large">Check out my work!</a>
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+        <div class="parallax"><img src="assets/Chicago_sunrise_1.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+        
+            <!-- Project Section -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div id="projects" class="icon-block">
+                        <h2 class="center blue-text lighten-3"><i class="material-icons">note_add</i></h2>
+                        <h3 class="center blue-text lighten-3">Project 1</h3>
+                        <p class="center blue-text lighten-3">Details about my first project here</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div id="projects2" class="icon-block">
+                        <h2 class="center blue-text"><i class="material-icons">note_add</i></h2>
+                        <h3 class="center blue-text text-lighten-3">Project 2</h3>
+                        <p class="center blue-text text-lighten-3">Details about my second project here</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div id="projects3" class="icon-block">
+                        <h2 class="center blue-text text-lighten-3"><i class="material-icons">note_add</i></h2>
+                        <h3 class="center blue-text text-lighten-3">Project 3</h3>
+                        <p class="center blue-text text-lighten-3">Details about my third project here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 white-text light">Contact me if you have any questions!</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="assets/Chicago_sunrise_1.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+
+    <footer class="page-footer blue lighten-3">
+        <div class="container">
+            <div class="row">
+                <div class="col 16 s12">
+                    <h5 class="white-text">Find out more about me!</h5>
+                </div>
+                <div class="col 13 s12">
+                    <ul>
+                        <li><a class="white-text" href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by David Guan
+            </div>
+        </div>
+    </footer>
 
 
-  <!-- Scripts -->
+  <!-- Scripts 
   <script type="text/javascript" src="https://code.jquery/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="js/init.js"></script>
+  -->
 </body>
 </html>
