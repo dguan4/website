@@ -1,5 +1,6 @@
 (function($) {
     $(function(){
+        console.log("hello");
 
         $(".button-collapse").sideNav({
             menuWidth: 300,
@@ -7,4 +8,4 @@
             closeOnClick: true
         });
     });
-})(jQuery);
+});
