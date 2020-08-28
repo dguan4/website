@@ -26,8 +26,8 @@
         justify="center"
         class="py-5 px-3"
         >
-        <v-col v-for="card in cards"
-          :key="card"
+        <v-col v-for="(card, idx) in cards"
+          :key="idx"
           class="px-2"
           md="4"
           cols="12">

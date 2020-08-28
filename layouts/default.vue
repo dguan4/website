@@ -80,11 +80,11 @@ export default {
           title: 'Home',
           to: '/'
         },
-        // {
-        //   icon: 'bubble_chart',
-        //   title: 'Inspire',
-        //   to: '/inspire'
-        // }
+        {
+          icon: 'mdi-account',
+          title: 'About Me',
+          to: '/about'
+        }
       ],
       miniVariant: false,
       right: true,
