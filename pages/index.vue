@@ -43,7 +43,8 @@
                 color="green darken-4"
                 :href="card.url"
                 right
-                absolute>
+                absolute
+                target="_blank">
                 Go!
               </v-btn>
             </v-card-actions>
