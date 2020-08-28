@@ -57,7 +57,7 @@
     >
       <span>&copy; {{currentYear}} by David Guan</span>
       <v-spacer></v-spacer>
-      <span>Built with Vuetify.js</span>
+      <span>Built with Vuetify</span>
     </v-footer>
   </v-app>
 </template>
