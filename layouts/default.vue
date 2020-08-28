@@ -32,7 +32,7 @@
       <v-spacer />
     </v-app-bar>
     <v-main>
-      <v-container fluid>
+      <v-container fluid ma-0 pa-0>
         <nuxt />
       </v-container>
     </v-main>
@@ -78,11 +78,11 @@ export default {
           title: 'Home',
           to: '/'
         },
-        {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
-        }
+        // {
+        //   icon: 'bubble_chart',
+        //   title: 'Inspire',
+        //   to: '/inspire'
+        // }
       ],
       miniVariant: false,
       right: true,
