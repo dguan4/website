@@ -74,5 +74,11 @@ module.exports = {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  /*
+  ** Nuxt.js dev-modules
+  */
+  buildModules: [
+    '@nuxtjs/style-resources'
+  ]
 }

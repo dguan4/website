@@ -30,7 +30,8 @@
       app
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+      <!-- <v-toolbar-title v-text="title" /> -->
+      <logo />
       <v-spacer />
     </v-toolbar>
     <v-content>
@@ -63,7 +64,12 @@
 </template>
 
 <script>
+import Logo from '~/components/Logo.vue'
+
 export default {
+  components: {
+    Logo
+  },
   data() {
     return {
       clipped: false,
