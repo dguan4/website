@@ -68,6 +68,17 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  mounted() {
+    // this.sleep(50000).then(() => {
+    //   console.log("test")
+    // })
+    
+  },
+  methods: {
+    sleep (time) {
+      return new Promise((resolve) => setTimeout(resolve, time));
+    }
   }
 }
 </script>
