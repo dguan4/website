@@ -55,7 +55,7 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; 2020 by David Guan</span>
+      <span>&copy; {{currentYear}} by David Guan</span>
       <v-spacer></v-spacer>
       <span>Built with Vuetify.js</span>
     </v-footer>
@@ -89,11 +89,13 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'David Guan'
+      title: 'David Guan',
+      currentYear: ''
     }
   },
   created () {
     this.$vuetify.theme.dark = true
+    this.currentYear = new Date().getFullYear()
   }
 }
 </script>
