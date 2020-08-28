@@ -55,7 +55,9 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; 2019</span>
+      <span>&copy; 2020 by David Guan</span>
+      <v-spacer></v-spacer>
+      <span>Built with Vuetify.js</span>
     </v-footer>
   </v-app>
 </template>
