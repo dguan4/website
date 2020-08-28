@@ -84,6 +84,11 @@ export default {
           icon: 'mdi-account',
           title: 'About Me',
           to: '/about'
+        },
+        {
+          icon: 'mdi-email-edit',
+          title: 'Contact Me',
+          to: '/contact'
         }
       ],
       miniVariant: false,
