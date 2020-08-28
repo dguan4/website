@@ -1,44 +1,41 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
+      temporary
       app
     >
       <v-list>
-        <v-list-tile
+        <v-list-item
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
           router
           exact
         >
-          <v-list-tile-action>
+          <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
-          </v-list-tile-content>
-        </v-list-tile>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="item.title" />
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar
-      :clipped-left="clipped"
-      fixed
+    <v-app-bar
+      clipped-left
       app
     >
-      <v-toolbar-side-icon @click="drawer = !drawer" />
+      <v-app-bar-nav-icon @click="drawer = !drawer" />
       <!-- <v-toolbar-title v-text="title" /> -->
       <logo />
       <v-spacer />
-    </v-toolbar>
-    <v-content>
+    </v-app-bar>
+    <v-main>
       <v-container fluid>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
     <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
@@ -46,12 +43,12 @@
       fixed
     >
       <v-list>
-        <v-list-tile @click.native="right = !right">
-          <v-list-tile-action>
+        <v-list-item @click.native="right = !right">
+          <v-list-item-action>
             <v-icon light>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
+          </v-list-item-action>
+          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-footer
@@ -92,6 +89,9 @@ export default {
       rightDrawer: false,
       title: 'David Guan'
     }
+  },
+  created () {
+    this.$vuetify.theme.dark = true
   }
 }
 </script>
