@@ -17,7 +17,7 @@
         >
           <v-col class="text-center" cols="12">
             <h1 class="text-h1 font-weight-bold mb-4"> David Guan </h1>
-            <h4 class="text-subtitle-1 font-weight-bold"> Software Developer </h4>
+            <h4 class="text-h4 font-weight-bold"> Software Developer </h4>
           </v-col>
         </v-row>
       </v-parallax>
