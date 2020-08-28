@@ -34,8 +34,19 @@
                 <div
                   v-if="active"
                   class="display-5 flex-grow-1 text-center"
-                  v-html="contact.description"
-                ></div>
+                >
+                {{contact.description}}
+                <v-btn class="card-button"
+                  color="green darken-4"
+                  bottom
+                  right
+                  absolute
+                  :href="contact.description"
+                  target="_blank"
+                  >
+                  test
+                </v-btn>
+                </div>
               </v-scroll-y-transition>
             </v-card>
           </v-item>
@@ -45,6 +56,10 @@
   </v-container>
 </template>
 
+<style lang="scss">
+
+</style>
+
 <script>
 export default {
   data() {
@@ -52,7 +67,7 @@ export default {
       contacts: [
         {
           title: "Email",
-          description: "david@guan.codes"
+          description: "mailto:david@guan.codes"
         },
         {
           title: "LinkedIn",
