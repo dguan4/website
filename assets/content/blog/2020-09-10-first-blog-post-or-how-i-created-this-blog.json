@@ -1,0 +1,6 @@
+{
+  "date": "2020-09-10T06:02:28.553Z",
+  "title": "First Blog Post, or how I created this blog",
+  "description": "First Blog Post",
+  "body": "This blog section utilizes Netlify CMS. I followed the initial steps here <https://www.netlifycms.org/docs/nuxt/>. \n\nThe blog posts are all static JSON files stored in the repository. Netlify CMS allows for many different fields but these are the simple ones. \n\n* Text field - fairly self explanatory\n* Date field - features a date and time picker\n* Rich text field - Allows you to write content using markdown. I'm using <https://www.npmjs.com/package/@nuxtjs/markdownit> to display the entire body with markdown text and styling it accordingly. \n\nNetlify CMS defines each one of these as widgets and there are many more widgets available at <https://www.netlifycms.org/docs/widgets/>. \n\nThere are many other uses for this that I might use in the future but this is it for now. \n\nNext up will be a blog post about the TFT game app that I'm creating with .NET Core and React. Look out for that next time!"
+}
