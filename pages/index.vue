@@ -56,35 +56,23 @@
 </template>
 
 <style lang="scss">
-.hero-image {
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 10px 60vw rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-}
+// .hero-image {
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     box-shadow: inset 0 0 10px 60vw rgba(0, 0, 0, 0.3);
+//     z-index: 1;
+//   }
+// }
 </style>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  },
-  mounted() {
-    // this.sleep(50000).then(() => {
-    //   console.log("test")
-    // })
-    
-  },
   data () {
     return {
       cards: [
@@ -107,9 +95,7 @@ export default {
     }
   },
   methods: {
-    sleep (time) {
-      return new Promise((resolve) => setTimeout(resolve, time));
-    }
+
   }
 }
 </script>

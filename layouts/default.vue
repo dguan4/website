@@ -86,6 +86,11 @@ export default {
           to: '/'
         },
         {
+          icon: 'mdi-post',
+          title: "Blogs",
+          to: '/blogs'
+        },
+        {
           icon: 'mdi-account',
           title: 'About Me',
           to: '/about'

@@ -43,7 +43,13 @@ module.exports = {
     '@nuxtjs/vuetify',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/markdownit'
   ],
+  styleResources: {
+    scss: [
+      "~assets/scss/_manifest.scss"
+    ]
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -64,6 +70,9 @@ module.exports = {
       error: colors.deepOrange.accent4,
       success: colors.green.accent3
     }
+  },
+  markdownit: {
+    injected: true
   },
   /*
   ** Build configuration
@@ -93,4 +102,5 @@ module.exports = {
       })
     },
   },
+  telemetry: true
 }
